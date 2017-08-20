@@ -1,4 +1,4 @@
-#PHP7 tool for easy add/remove "declare(strict_types=1)"
+# PHP7 tool for easy add/remove "declare(strict_types=1)"
 
 Enable strict typing in your project with one command. Based on PCRE and supports PSR-2.
 
