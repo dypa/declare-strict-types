@@ -10,7 +10,7 @@ class Remove extends BaseStrategy implements Strategy
     {
         return preg_replace(
             '/(\s*)<\?php(\s*)declare\s*\(\s*strict_types\s*=\s*\d\s*\)\s*;\s*/i',
-            "$1<?php$2",
+            '$1<?php$2',
             $sourceCode,
             1,
             $this->isAffected
