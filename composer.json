@@ -1,0 +1,29 @@
+{
+    "name": "dypa/declare_strict_types",
+    "description": "PHP7 tool for easy add/remove \"declare(strict_types=1)\"",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Dypa\\DeclareStrictTypes\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "symfony/console": "^3.3",
+        "symfony/finder": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
+    },
+    "bin": [
+        "bin/declare_strict_types"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dypa",
+            "email": "dypa@bk.ru"
+        }
+    ],
+    "minimum-stability": "stable"
+}
