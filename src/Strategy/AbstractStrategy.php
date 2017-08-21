@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Dypa\DeclareStrictTypes\Strategy;
 
-class BaseStrategy
+abstract class AbstractStrategy
 {
     protected $isAffected;
 

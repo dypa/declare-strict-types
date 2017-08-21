@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Dypa\DeclareStrictTypes\Strategy;
 
-class Remove extends BaseStrategy implements Strategy
+class Remove extends AbstractStrategy implements StrategyInterface
 {
     public function __invoke(string $sourceCode): string
     {

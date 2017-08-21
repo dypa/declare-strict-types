@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Dypa\DeclareStrictTypes;
 
-use Dypa\DeclareStrictTypes\Strategy\Strategy;
+use Dypa\DeclareStrictTypes\Strategy\StrategyInterface;
 use Symfony\Component\Finder\Finder;
 
 class FileSystemReplacer
@@ -32,7 +32,7 @@ class FileSystemReplacer
         return $finder->getIterator();
     }
 
-    private function fileIterator(\Iterator $iterator, Strategy $callback)
+    private function fileIterator(\Iterator $iterator, StrategyInterface $callback)
     {
         foreach ($iterator as $file) {
             /** @var $file \SplFileInfo */
@@ -47,7 +47,7 @@ class FileSystemReplacer
         }
     }
 
-    public function replace(Strategy $callback)
+    public function replace(StrategyInterface $callback)
     {
         $this->fileIterator($this->getFilesList(), $callback);
     }
