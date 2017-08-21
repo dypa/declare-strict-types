@@ -1,5 +1,9 @@
 # PHP7 tool for easy add/remove "declare(strict_types=1)"
 
+[![Latest Stable Version](https://poser.pugx.org/dypa/declare_strict_types/v/stable.png)](//packagist.org/packages/dypa/declare_strict_types)
+[![Latest Unstable Version](https://poser.pugx.org/dypa/declare_strict_types/v/unstable.png)](//packagist.org/packages/dypa/declare_strict_types)
+[![Total Downloads](https://poser.pugx.org/dypa/declare_strict_types/downloads.png)](//packagist.org/packages/dypa/declare_strict_types)
+
 Enable strict typing in your project with one command. Based on PCRE and supports PSR-2.
 
 WARNING: before run command ensure that you have backup of your files!!!
