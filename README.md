@@ -22,3 +22,7 @@ Run command to add "declare(strict_types=1)" in all files in specified folders
 Also supports remove mode
 
 `bin/declare_strict_types remove foo/directory`
+
+## PS
+
+You may prefer [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) with "declare_strict_types" rule!
