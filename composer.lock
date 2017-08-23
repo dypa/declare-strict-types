@@ -4,57 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b5b8518825ae21d189c8d14273c7d1e",
+    "content-hash": "38c1458805d684edfd16beae1edd8af0",
     "packages": [
-        {
-            "name": "phpunit/php-token-stream",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "ecb0b2cdaa0add708fe6f329ef65ae0c5225130b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/ecb0b2cdaa0add708fe6f329ef65ae0c5225130b",
-                "reference": "ecb0b2cdaa0add708fe6f329ef65ae0c5225130b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": "^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.2.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Wrapper around PHP's tokenizer extension.",
-            "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
-            "keywords": [
-                "tokenizer"
-            ],
-            "time": "2017-08-03T14:17:41+00:00"
-        },
         {
             "name": "psr/log",
             "version": "1.0.2",
@@ -946,6 +897,55 @@
             "time": "2017-02-26T11:10:40+00:00"
         },
         {
+            "name": "phpunit/php-token-stream",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-token-stream.git",
+                "reference": "9a02332089ac48e704c70f6cefed30c224e3c0b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/9a02332089ac48e704c70f6cefed30c224e3c0b0",
+                "reference": "9a02332089ac48e704c70f6cefed30c224e3c0b0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Wrapper around PHP's tokenizer extension.",
+            "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
+            "keywords": [
+                "tokenizer"
+            ],
+            "time": "2017-08-20T05:47:52+00:00"
+        },
+        {
             "name": "phpunit/phpunit",
             "version": "6.3.0",
             "source": {
@@ -1744,7 +1744,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0.0"
+        "php": ">=7.1.0"
     },
     "platform-dev": []
 }
