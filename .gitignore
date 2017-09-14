@@ -1,1 +1,4 @@
 vendor/
+
+phpunit.xml
+infection.json

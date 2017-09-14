@@ -12,6 +12,9 @@ class RemoveTest extends PHPUnit_Framework_TestCase
         $this->strategy = new Remove();
     }
 
+    /**
+     * @covers Dypa\DeclareStrictTypes\Strategy\Remove::__invoke
+     */
     public function testNonPhp()
     {
         $this->assertEquals(
@@ -20,6 +23,9 @@ class RemoveTest extends PHPUnit_Framework_TestCase
         );
     }
 
+    /**
+     * @covers Dypa\DeclareStrictTypes\Strategy\Remove::__invoke
+     */
     public function testEmptyPhp()
     {
         $this->assertEquals(
@@ -28,6 +34,9 @@ class RemoveTest extends PHPUnit_Framework_TestCase
         );
     }
 
+    /**
+     * @covers Dypa\DeclareStrictTypes\Strategy\Remove::__invoke
+     */
     public function testClass()
     {
         $this->assertEquals(
@@ -36,6 +45,9 @@ class RemoveTest extends PHPUnit_Framework_TestCase
         );
     }
 
+    /**
+     * @covers Dypa\DeclareStrictTypes\Strategy\Remove::__invoke
+     */
     public function testPhpPhp()
     {
         $this->assertEquals(
@@ -43,6 +55,10 @@ class RemoveTest extends PHPUnit_Framework_TestCase
             ($this->strategy)("<?php\ndeclare(strict_types=1);\necho 1;\n?>\n2\n<?php\necho 3;\n")
         );
     }
+
+    /**
+     * @covers Dypa\DeclareStrictTypes\Strategy\Remove::__invoke
+     */
     public function testPhpDoc()
     {
         $this->assertEquals(
